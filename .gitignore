@@ -1,0 +1,24 @@
+
+# Backups
+*~
+
+# Logs
+logs
+*.log
+
+# IDEA
+/.idea/
+.idea/
+*.iml
+
+# VSCode
+.vscode
+*.*-workspace
+
+# Eclipse
+.eclipse
+.classpath
+
+# Other
+*/.DS_Store
+.DS_Store
