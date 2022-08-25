@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # NOTE:
-# This script should be run by another wrapper script. To run it separately:
+# This script should be triggered by another wrapper script. To run it separately:
 # sudo chmod +x package_init.sh
 # ./package_init.sh | tee package_init.log
 
@@ -12,6 +12,7 @@
 
 # Record time
 time1=$(date +%s)  # start time
+echo
 
 # Install xcode (required for git and homebrew)
 # Note: Installer asks for confirmation and pop-up license agreement at the beginning
@@ -51,23 +52,6 @@ else
     brew --version
     echo "$ROW_TILDA"
 fi
-
-# Install or upgrade Git (on MacOS Monterey the git is already installed)
-#if ! command -v git &> /dev/null
-#then
-#    echo "Start installing Git:"
-#    brew install git
-#    echo "$ROW_TILDA"
-#    git --version
-#    which git
-#    echo "$ROW_TILDA"
-#else
-#    echo "Git is already installed:"
-#    git --version
-#    which git
-#    echo "$ROW_TILDA"
-#fi
-
 
 # Install or upgrade Git (instead of default v. 2.32.1 (Apple Git-133))
 echo "Upgrade Git:"

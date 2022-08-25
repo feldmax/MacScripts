@@ -12,6 +12,7 @@
 
 # Record time
 time1=$(date +%s)  # start time
+echo
 
 # STUB
 echo -e "-------------------This is empty TEST package remote call--------------------------"
