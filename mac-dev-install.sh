@@ -132,13 +132,13 @@ start_time=$(date +%s)  #start time
 for pack in "${install_packs[@]}"; do
     sleep .5
     source ./$pack.sh || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/feldmax/MacScripts/main/$pack.sh)"
+    echo "$ROW_TILDA"
 done
 
 # Record time
 end_time=$(date +%s)    #end time
 
 # Calculate install process execution time
-echo
 secs=$(($end_time - $start_time))
 printf '\nTotal execution time: %02dh:%02dm:%02ds\n' $((secs/3600)) $((secs%3600/60)) $((secs%60))
 
