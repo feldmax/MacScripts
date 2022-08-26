@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 #
 # NOTE:
-# To run this script locally on your MacBook please make this file executable:
+# To start this script, copy and run the following command in a terminal:
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/feldmax/MacScripts/main/mac-dev-install.sh)" | tee mac-dev-install.log
+#
+# To run this script locally, use the next commands:
 # sudo chmod +x mac-dev-install.sh
-# Run script:
 # ./mac-dev-install.sh | tee mac-dev-install.log
-# To run this script directly from GitHub try:
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/feldmax/MacScripts/main/mac-dev-install.sh)"
-
+#
 # trap 'echo "# $BASH_COMMAND";read' DEBUG    # enable debug mode upon demand
 
-# Separation rows & garnish variables
+# Separation rows & style modifiers
 ROW_TILDA=$(printf '~%.0s' {1..80}; printf '\n')
 ROW_HASH=$(printf '#%.0s' {1..80}; printf '\n')
 RESET='\033[0m'
