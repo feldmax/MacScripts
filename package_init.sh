@@ -59,8 +59,8 @@ which git
 echo "$ROW_TILDA"
 
 # Upgrade all python packages (added with XCode library > Python3 framework)
-echo "Upgrade all python packages:"
-pip install --upgrade $(pip list --outdated | awk 'NR>2 { print $1 }')
+echo "Upgrade all Python packages:"
+pip3 install --upgrade $(pip list --outdated | awk 'NR>2 { print $1 }')
 pip3 --version
 which pip3
 pip3 list
