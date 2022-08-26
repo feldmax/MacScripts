@@ -139,7 +139,7 @@ end_time=$(date +%s)    #end time
 
 # Calculate install process execution time
 secs=$(($end_time - $start_time))
-printf 'Total execution time: %02dh:%02dm:%02ds\n' $((secs/3600)) $((secs%3600/60)) $((secs%60))
+printf '\nTotal execution time: %02dh:%02dm:%02ds\n' $((secs/3600)) $((secs%3600/60)) $((secs%60))
 
 # Restart remainder
 echo -e "\n🔄  Now that the installation is complete, PLEASE DON'T FORGET TO RESTART YOUR COMPUTER 🔄  "
