@@ -60,8 +60,8 @@ git --version
 which git
 echo "$ROW_TILDA"
 
-# Upgrade all python packages (added with XCode library > Python3 framework)
-echo "Upgrade all Python packages:"
+# Upgrade PIP and all python packages (added with XCode library > Python3 framework)
+echo "Upgrade PIP and all Python packages:"
 pip3 install --upgrade $(pip3 list --outdated | awk 'NR>2 { print $1 }')
 pip3 --version
 which pip3
