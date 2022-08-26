@@ -32,23 +32,23 @@ will be installed.
 
 Common tools:
 - package_init      (Apple XCode, Homebrew, Git and Python PIP)
-- package_java      (Open JDK, Maven, IntelliJ IDEA CE)
+- package_java      (Open JDK, Maven, Tomcat, IntelliJ IDEA CE)
 - package_python    (Python, PyCharm CE, Jupyter Lab)
 - package_js        (NodeJS, IntelliJ IDEA CE)
-- package_ide       (IntelliJ IDEA CE, Visual Studio Code, Eclipse JEE)
+- package_ide       (IntelliJ, VS Code, Eclipse, Atom, Brackets)
 - package_browsers  (Chrome, Canary, Chromium, Edge, Firefox, Opera)
-- package_messangers        (WhatsUp, Telegram, Viber, Zoom, Slack)
+- package_messangers        (WhatsUp, Telegram, Viber, Zoom)
 - package_virtualization    (Docker Desktop, Parallels Desktop)
-- package_miscellaneous     (Adobe Acrobat, Atom, Brackets, Mac Fan Control, Postman, Snagit, Unarchiver, VLC)
+- package_miscellaneous     (Adobe Acrobat, Mac Fan Control, Postman, Unarchiver, VLC)
 Team specific tools:
-- package_devops    (gh, groovy, vault, kubectl, iacbox, cf-cli, telnet, wget)
+- package_devops    (groovy, vault, kubectl, cf-cli, telnet, wget, gh, iacbox )
 - package_neo       (Open JDK 8, NodeJS 14)
 Personal tools:
-- package_personal  (Google Drive, uTorrent, tree, mkdocs-material, aliases)
+- package_personal  (Google Drive, uTorrent, tree, mkdocs-material, aliases, pip-upgrade)
 
 The expected execution time may vary depending on the number of packages you
-wish to install. In most cases it will be 10 to 60 minutes if Apple XCode is
-already installed.
+want to install. In most cases it will be about 10-15 minutes per package,
+if Apple XCode is already installed.
 During the installation process, you will be asked to enter your iUser account
 and will be prompted several times to enter your password and accept licenses,
 if necessary.
