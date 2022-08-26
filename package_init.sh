@@ -8,11 +8,11 @@
 #
 # trap 'echo "# $BASH_COMMAND";read' DEBUG    # enable debug mode upon demand
 
+echo -e "****************************** PACKAGE_INIT ******************************"
+echo
+
 # Record time
 time1=$(date +%s)  # start time
-echo
-echo -e "********** $BOLD $pack $RESET ************"
-echo
 
 # Install xcode (required for git and homebrew)
 # Note: Installer asks for confirmation and pop-up license agreement at the beginning
