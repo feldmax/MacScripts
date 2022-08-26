@@ -15,6 +15,7 @@ time1=$(date +%s)  # start time
 
 # Install xcode (required for git and homebrew)
 # Note: Installer asks for confirmation and pop-up license agreement at the beginning
+# Note: Installer asks for sudo password after download
 if [[ $(xcode-select --install 2>&1) =~ "command line tools are already installed" ]]
 then
 #    echo "$(xcode-select -v) is already installed in $(xcode-select -p)"
@@ -61,7 +62,7 @@ echo "$ROW_TILDA"
 
 # Upgrade all python packages (added with XCode library > Python3 framework)
 echo "Upgrade all Python packages:"
-pip3 install --upgrade $(pip list --outdated | awk 'NR>2 { print $1 }')
+pip3 install --upgrade $(pip3 list --outdated | awk 'NR>2 { print $1 }')
 pip3 --version
 which pip3
 pip3 list
