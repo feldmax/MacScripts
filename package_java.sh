@@ -27,11 +27,11 @@ then
 #    grep -q  'JAVA_HOME' ~/.zprofile || echo "export JAVA_HOME=$(/usr/libexec/java_home)" >> ~/.zprofile
 
 # sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+    grep -q  'openjdk/bin' ~/.profile  || echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.profile
+    grep -q  'openjdk/bin' ~/.zprofile || echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zprofile
 
     grep -q  'JAVA_HOME' ~/.profile  || echo "export JAVA_HOME=/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home" >> ~/.profile
     grep -q  'JAVA_HOME' ~/.zprofile || echo "export JAVA_HOME=/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home" >> ~/.zprofile
-    grep -q  'openjdk' ~/.profile  || echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.profile
-    grep -q  'openjdk' ~/.zprofile || echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zprofile
 
     source ~/.profile
     java -version
