@@ -18,21 +18,11 @@ time1=$(date +%s)  # start time
 if [[ $(java -version 2>&1) =~ "Unable to locate a Java Runtime" ]]
 then
     echo "Start installing OpenJDK:"
-#    brew tap adoptopenjdk/openjdk
-#    brew install --cask adoptopenjdk8
     brew install openjdk
-#    echo
-#    java -version
-#    grep -q  'JAVA_HOME' ~/.profile  || echo "export JAVA_HOME=$(/usr/libexec/java_home)" >> ~/.profile
-#    grep -q  'JAVA_HOME' ~/.zprofile || echo "export JAVA_HOME=$(/usr/libexec/java_home)" >> ~/.zprofile
-
-# sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
     grep -q  'openjdk/bin' ~/.profile  || echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.profile
     grep -q  'openjdk/bin' ~/.zprofile || echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zprofile
-
     grep -q  'JAVA_HOME' ~/.profile  || echo "export JAVA_HOME=/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home" >> ~/.profile
     grep -q  'JAVA_HOME' ~/.zprofile || echo "export JAVA_HOME=/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home" >> ~/.zprofile
-
     source ~/.profile
     java -version
     echo "JAVA_HOME is:"
