@@ -45,7 +45,7 @@ then
     brew --version
     echo "$ROW_TILDA"
 else
-    echo "Homebrew is already installed:"
+    echo "Homebrew is already installed. Checking for an update..."
 #    brew --version
     brew update
     brew upgrade
@@ -54,14 +54,14 @@ else
 fi
 
 # Install or upgrade Git (instead of default v. 2.32.1 (Apple Git-133))
-echo "Upgrade Git:"
+echo "Checking for Git updates..."
 brew install git
 git --version
 which git
 echo "$ROW_TILDA"
 
 # Upgrade PIP and all python packages (added with XCode library > Python3 framework)
-echo "Upgrade PIP and all Python packages:"
+echo "Checking for Python packages updates..."
 pip3 install --upgrade $(pip3 list --outdated | awk 'NR>2 { print $1 }')
 pip3 --version
 which pip3

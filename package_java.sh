@@ -21,8 +21,8 @@ then
 #    brew tap adoptopenjdk/openjdk
 #    brew install --cask adoptopenjdk8
     brew install openjdk
-    echo
-    java -version
+#    echo
+#    java -version
 #    grep -q  'JAVA_HOME' ~/.profile  || echo "export JAVA_HOME=$(/usr/libexec/java_home)" >> ~/.profile
 #    grep -q  'JAVA_HOME' ~/.zprofile || echo "export JAVA_HOME=$(/usr/libexec/java_home)" >> ~/.zprofile
 
@@ -34,6 +34,7 @@ then
     grep -q  'openjdk' ~/.zprofile || echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zprofile
 
     source ~/.profile
+    java -version
     echo "JAVA_HOME is:"
     echo "$JAVA_HOME"
     echo "$ROW_TILDA"
