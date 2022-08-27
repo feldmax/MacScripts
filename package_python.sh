@@ -22,7 +22,7 @@ grep -q  'alias pip=' ~/.profile  || echo alias pip='/opt/homebrew/bin/pip3' >> 
 grep -q  'alias pip=' ~/.zprofile || echo alias pip='/opt/homebrew/bin/pip3' >> ~/.zprofile
 source ~/.profile
 python3 --version
-which python
+which python3
 echo "$ROW_TILDA"
 
 # Upgrade pip and setuptools
