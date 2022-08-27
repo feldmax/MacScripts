@@ -36,8 +36,8 @@ if ! command -v jupyter-lab &> /dev/null
 then
     echo "Start installing Jupyter-Lab:"
     brew install jupyterlab
-    echo alias jplab='/opt/homebrew/bin/jupyter-lab' >> ~/.profile
-    echo alias jplab='/opt/homebrew/bin/jupyter-lab' >>  ~/.zprofile
+    grep -q  'jplab=' ~/.profile  || echo alias jplab='/opt/homebrew/bin/jupyter-lab' >> ~/.profile
+    grep -q  'jplab=' ~/.zprofile || echo alias jplab='/opt/homebrew/bin/jupyter-lab' >>  ~/.zprofile
     source ~/.profile
     jupyter --version
     echo "$ROW_TILDA"
