@@ -14,9 +14,10 @@ echo -e "\n****************************** PACKAGE_TEMPLATE *********************
 time1=$(date +%s)  # start time
 
 # Install something
-# TBD--------<add code here>-------------
-# TBD--------<add code here>-------------
-# TBD--------<add code here>-------------
+# TBD--------<add code example here: CLI app>-------------
+# TBD--------<add code example here: UI app>-------------
+# TBD--------<add code example here: Python app>-------------
+echo "$ROW_TILDA"
 
 # Record time
 time2=$(date +%s)  # end time
