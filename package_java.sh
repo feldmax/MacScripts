@@ -42,11 +42,10 @@ if ! command -v mvn &> /dev/null
 then
     echo "Start installing Maven:"
     brew install maven
-    echo
-    mvn --version
     grep -q  'M2_HOME' ~/.profile  || echo "export M2_HOME=/opt/homebrew/opt/maven/libexec" >> ~/.profile
     grep -q  'M2_HOME' ~/.zprofile || echo "export M2_HOME=/opt/homebrew/opt/maven/libexec" >> ~/.zprofile
     source ~/.profile
+    mvn --version
     echo "M2_HOME is:"
     echo "$M2_HOME"
     echo "$ROW_TILDA"
@@ -59,8 +58,18 @@ else
     echo "$ROW_TILDA"
 fi
 
-# Install Tomcat
-# TBD
+# Install Apache Tomcat (catalina)
+if ! command -v catalina &> /dev/null
+then
+    echo "Start installing Apache Tomcat (catalina):"
+    brew install tomcat
+    catalina version
+    echo "$ROW_TILDA"
+else
+    echo "Tomcat (catalina) is already installed:"
+    catalina version
+    echo "$ROW_TILDA"
+fi
 
 # Install IntelliJ IDEA CE
 if [[ -x /Applications/IntelliJ\ IDEA\ CE.app ]]
