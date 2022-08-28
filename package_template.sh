@@ -13,11 +13,50 @@ echo -e "\n****************************** PACKAGE_TEMPLATE *********************
 # Record time
 time1=$(date +%s)  # start time
 
-# Install something
-# TBD--------<add code example here: CLI app>-------------
-# TBD--------<add code example here: UI app>-------------
-# TBD--------<add code example here: Python app>-------------
-echo "$ROW_TILDA"
+# Find homebrew formulas in: https://formulae.brew.sh/
+# Find Python packages in: https://pypi.org/
+# In the examples below, change XXXXX to the actual app name.
+#
+## Install CLI application example
+#if ! command -v XXXXX &> /dev/null
+#then
+#    echo "Start installing XXXXX:"
+#    brew install XXXXX
+#    XXXXX --version
+#    echo "$ROW_TILDA"
+#else
+#    echo "XXXXX is already installed:"
+#    XXXXX --version
+#    echo "$ROW_TILDA"
+#fi
+#
+## Install GUI application example
+#if [[ -x /Applications/XXXXX.app ]]
+#then
+#    echo "XXXXX is already installed:"
+#    echo "/Applications/XXXXX.app"
+#    echo "$ROW_TILDA"
+#else
+#    echo "Start installing XXXXX:"
+#    brew install --cask XXXXX
+#    echo "$ROW_TILDA"
+#fi
+#
+## Install Python application example
+#echo "Start installing XXXXX:"
+#pip3 install XXXXX
+#echo "$ROW_TILDA"
+#
+## Uninstall Homebrew app example (if the app is no longer needed)
+#echo "Removing XXXXX:"
+#brew uninstall XXXXX
+#echo "$ROW_TILDA"
+#
+## Uninstall Python app example (if the app is no longer needed)
+#echo "Removing XXXXX:"
+#pip3 uninstall XXXXX
+#echo "$ROW_TILDA"
+#
 
 # Record time
 time2=$(date +%s)  # end time

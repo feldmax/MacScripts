@@ -77,7 +77,7 @@ echo "$ROW_TILDA"
 
 # Verify iUser
 sleep .5
-read -r -p "Please type your $BOLD username $RESET (iUser|cUser|dUser): " user
+read -r -p "Please type your username (iUser|cUser|dUser): " user
 [ -z "$user" ] && user="$(whoami)"
 
 shopt -s nocasematch; if [[ "$(whoami)" =~ $user ]]
