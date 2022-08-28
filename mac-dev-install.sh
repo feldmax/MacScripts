@@ -38,7 +38,8 @@ Common tools:
 - package_ide       (IntelliJ, VS Code, Eclipse, Atom, Brackets)
 - package_browsers  (Chrome, Canary, Chromium, Edge, Firefox, Opera)
 - package_messengers        (WhatsApp, Telegram, Viber, Zoom)
-- package_miscellaneous     (Adobe Acrobat, Macs Fan Control, Postman, Unarchiver, VLC)
+- package_miscellaneous     (Adobe Acrobat, Macs Fan Control, Unarchiver, VLC)
+- package_qa                (Postman, JMerer, Selenium)
 Team specific tools:
 - package_devops    (groovy, vault, docker, kubectl, cf-cli, gh)
 - package_neo       (Open JDK 8, NodeJS 14)
@@ -98,7 +99,7 @@ fi
 
 # Create the list of packages to be installed
 packages=("package_java" "package_js" "package_python" "package_ide" "package_browsers" "package_messengers" \
-"package_miscellaneous" "package_upgrade")
+"package_miscellaneous" "package_qa" "package_upgrade")
 
 install_packs=("package_init")  #always install/update initial package
 

@@ -38,18 +38,6 @@ else
     echo "$ROW_TILDA"
 fi
 
-# Install Postman
-if [[ -x /Applications/Postman.app ]]
-then
-    echo "Postman is already installed:"
-    echo "/Applications/Postman.app"
-    echo "$ROW_TILDA"
-else
-    echo "Start installing Postman:"
-    brew install --cask postman
-    echo "$ROW_TILDA"
-fi
-
 # Install The Unarchiver
 if [[ -x /Applications/The\ Unarchiver.app ]]
 then

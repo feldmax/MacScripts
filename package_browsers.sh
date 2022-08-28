@@ -50,6 +50,7 @@ else
 fi
 
 # Install Microsoft Edge
+# Note: Installer asks for sudo password...
 if [[ -x /Applications/Microsoft\ Edge.app ]]
 then
     echo "Microsoft Edge is already installed:"
