@@ -37,7 +37,7 @@ Common tools:
 - package_js        (NodeJS, IntelliJ IDEA CE)
 - package_ide       (IntelliJ, VS Code, Eclipse, Atom, Brackets)
 - package_browsers  (Chrome, Canary, Chromium, Edge, Firefox, Opera)
-- package_messangers        (WhatsUp, Telegram, Viber, Zoom)
+- package_messengers        (WhatsApp, Telegram, Viber, Zoom)
 - package_virtualization    (Docker Desktop, Parallels Desktop)
 - package_miscellaneous     (Adobe Acrobat, Mac Fan Control, Postman, Unarchiver, VLC)
 Team specific tools:
