@@ -25,12 +25,6 @@ python3 --version
 which python3
 echo "$ROW_TILDA"
 
-# Upgrade pip and setuptools
-echo "Upgrade pip and setuptools:"
-pip3 install --upgrade pip setuptools
-pip3 list
-echo "$ROW_TILDA"
-
 # Install Jupyter-Lab
 if ! command -v jupyter-lab &> /dev/null
 then
@@ -58,6 +52,12 @@ else
     brew install --cask pycharm-ce
     echo "$ROW_TILDA"
 fi
+
+# Upgrade pip and setuptools
+echo "Checking for updates for Python pip and setuptools..."
+pip3 install --upgrade pip setuptools
+pip3 list
+echo "$ROW_TILDA"
 
 # Record time
 time2=$(date +%s)  # end time

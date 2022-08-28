@@ -41,10 +41,12 @@ Common tools:
 - package_virtualization    (Docker Desktop, Parallels Desktop)
 - package_miscellaneous     (Adobe Acrobat, Mac Fan Control, Postman, Unarchiver, VLC)
 Team specific tools:
-- package_devops    (groovy, vault, kubectl, cf-cli, telnet, wget, gh, iacbox )
+- package_devops    (groovy, vault, kubectl, cf-cli, gh, Docker )
 - package_neo       (Open JDK 8, NodeJS 14)
 Personal tools:
-- package_personal  (Google Drive, uTorrent, tree, mkdocs-material, aliases, pip-upgrade)
+- package_personal  (Google Drive, uTorrent, mkdocs-material, aliases, tree, telnet, wget )
+Upgrade:
+- package_upgrade (upgrade all installed packages to the latest versions)
 
 The expected execution time may vary depending on the number of packages you
 want to install. In most cases it will be about 10-15 minutes per package,
@@ -75,7 +77,7 @@ echo "$ROW_TILDA"
 
 # Verify iUser
 sleep .5
-read -r -p "Please type your username (iUser|cUser|dUser): " user
+read -r -p "Please type your $BOLD username $RESET (iUser|cUser|dUser): " user
 [ -z "$user" ] && user="$(whoami)"
 
 shopt -s nocasematch; if [[ "$(whoami)" =~ $user ]]

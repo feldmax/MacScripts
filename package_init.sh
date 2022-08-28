@@ -43,7 +43,7 @@ then
     brew --version
     echo "$ROW_TILDA"
 else
-    echo "Homebrew is already installed. Checking for an update..."
+    echo "Homebrew is already installed:"
     brew --version
     echo "$ROW_TILDA"
 fi
@@ -64,7 +64,7 @@ else
 fi
 
 # Upgrade pip and setuptools (added with XCode library > Python3 framework)
-echo "Upgrade pip and setuptools:"
+echo "Checking for updates for Python pip and setuptools..."
 pip3 install --upgrade pip setuptools
 pip3 --version
 which pip3
