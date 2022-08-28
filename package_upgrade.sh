@@ -30,12 +30,6 @@ echo "Brew packages:"
 brew list --versions
 echo "$ROW_TILDA"
 
-## Upgrade PIP and all python packages
-#echo "Checking for Python packages updates..."
-#pip3 install --upgrade $(pip3 list --outdated | awk 'NR>2 { print $1 }')
-#pip3 list
-#echo "$ROW_TILDA"
-
 # Upgrade PIP and all python packages
 echo "Checking for Python packages updates..."
 pip3 install --upgrade $(pip3 list --outdated | awk 'NR>2 { print $1 }') &>/dev/null
