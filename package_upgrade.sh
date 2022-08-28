@@ -37,16 +37,10 @@ echo "$ROW_TILDA"
 #echo "$ROW_TILDA"
 
 # Upgrade PIP and all python packages
-if [[ ${pip3 install --upgrade $(pip3 list --outdated | awk 'NR>2 { print $1 }')} =~ "ERROR: You must give at least one requirement" ]]
-then
-    echo "All Python packages are up-to-date"
-    pip3 list
-    echo "$ROW_TILDA"
-else
-    echo "Some packages were upgraded:"
-    pip3 list
-    echo "$ROW_TILDA"
-fi
+echo "Checking for Python packages updates..."
+pip3 install --upgrade $(pip3 list --outdated | awk 'NR>2 { print $1 }') 2>&1 /dev/null
+pip3 list
+echo "$ROW_TILDA"
 
 # Record time
 time2=$(date +%s)  # end time
