@@ -37,7 +37,7 @@ echo "$ROW_TILDA"
 #echo "$ROW_TILDA"
 
 # Upgrade PIP and all python packages
-if [[ $(pip3 install --upgrade $(pip3 list --outdated | awk 'NR>2 { print $1 }')) =~ "ERROR: You must give at least one requirement" ]]
+if [[ ${pip3 install --upgrade $(pip3 list --outdated | awk 'NR>2 { print $1 }')} =~ "ERROR: You must give at least one requirement" ]]
 then
     echo "All Python packages are up-to-date"
     pip3 list
