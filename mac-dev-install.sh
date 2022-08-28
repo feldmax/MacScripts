@@ -40,7 +40,7 @@ Common tools:
 - package_messengers        (WhatsApp, Telegram, Viber, Zoom)
 - package_miscellaneous     (Adobe Acrobat, Macs Fan Control, Postman, Unarchiver, VLC)
 Team specific tools:
-- package_devops    (groovy, vault, docker-cli, kubectl, cf-cli, gh, Docker )
+- package_devops    (groovy, vault, docker, kubectl, cf-cli, gh)
 - package_neo       (Open JDK 8, NodeJS 14)
 Personal tools:
 - package_personal  (Google Drive, uTorrent, mkdocs-material, aliases, tree, telnet, wget )
