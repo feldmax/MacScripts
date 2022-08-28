@@ -18,7 +18,6 @@ time1=$(date +%s)  # start time
 # Note: Installer asks for sudo password after download
 if [[ $(xcode-select --install 2>&1) =~ "command line tools are already installed" ]]
 then
-#    echo "$(xcode-select -v) is already installed in $(xcode-select -p)"
     echo "XCode is already installed:"
     xcode-select -v
     xcode-select -p
