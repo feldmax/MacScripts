@@ -3,12 +3,12 @@
 # NOTE:
 # This script should be triggered by another wrapper script.
 # To run it locally, use the next commands:
-# sudo chmod +x package_template.sh
-# ./package_template.sh | tee package_template.log
+# sudo chmod +x package_messengers.sh
+# ./package_messengers.sh | tee package_messengers.log
 #
 # trap 'echo "# $BASH_COMMAND";read' DEBUG    # enable debug mode upon demand
 
-echo -e "\n****************************** PACKAGE_TEMPLATE ******************************\n"
+echo -e "\n****************************** PACKAGE_MESSENGERS ******************************\n"
 
 # Record time
 time1=$(date +%s)  # start time

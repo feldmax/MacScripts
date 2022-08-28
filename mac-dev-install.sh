@@ -33,15 +33,14 @@ will be installed.
 Common tools:
 - package_init      (Apple XCode, Homebrew, Git and Python PIP)
 - package_java      (Open JDK, Maven, Tomcat, IntelliJ IDEA CE)
-- package_python    (Python, PyCharm CE, Jupyter Lab)
 - package_js        (NodeJS, IntelliJ IDEA CE)
+- package_python    (Python, PyCharm CE, Jupyter Lab)
 - package_ide       (IntelliJ, VS Code, Eclipse, Atom, Brackets)
 - package_browsers  (Chrome, Canary, Chromium, Edge, Firefox, Opera)
 - package_messengers        (WhatsApp, Telegram, Viber, Zoom)
-- package_virtualization    (Docker Desktop, Parallels Desktop)
-- package_miscellaneous     (Adobe Acrobat, Mac Fan Control, Postman, Unarchiver, VLC)
+- package_miscellaneous     (Adobe Acrobat, Macs Fan Control, Postman, Unarchiver, VLC)
 Team specific tools:
-- package_devops    (groovy, vault, kubectl, cf-cli, gh, Docker )
+- package_devops    (groovy, vault, docker-cli, kubectl, cf-cli, gh, Docker )
 - package_neo       (Open JDK 8, NodeJS 14)
 Personal tools:
 - package_personal  (Google Drive, uTorrent, mkdocs-material, aliases, tree, telnet, wget )
@@ -98,7 +97,9 @@ After that, run this script again.
 fi
 
 # Create the list of packages to be installed
-packages=("package_java" "package_python" "package_js" "package_upgrade")
+packages=("package_java" "package_js" "package_python" "package_ide" "package_browsers" "package_messengers" \
+"package_miscellaneous" "package_upgrade")
+
 install_packs=("package_init")  #always install/update initial package
 
 for str in "${packages[@]}"; do
