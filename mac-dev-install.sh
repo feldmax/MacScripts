@@ -39,7 +39,7 @@ Common tools:
 - package_browsers  (Chrome, Canary, Chromium, Edge, Firefox, Opera)
 - package_messengers        (WhatsApp, Telegram, Viber, Zoom)
 - package_miscellaneous     (Adobe Acrobat, Macs Fan Control, Unarchiver, VLC)
-- package_qa                (Postman, JMerer, Selenium)
+- package_qa                (Open JDK, Postman, JMerer, Selenium)
 Team specific tools:
 - package_devops    (groovy, vault, docker, kubectl, cf-cli, gh)
 - package_neo       (Open JDK 8, NodeJS 14)

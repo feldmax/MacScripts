@@ -13,6 +13,30 @@ echo -e "\n****************************** PACKAGE_QA ***************************
 # Record time
 time1=$(date +%s)  # start time
 
+# Install Java (Open JDK)
+# Note: The installer asks for Password and acceptance of Java access to the Documents folder, at the end
+if [[ $(java -version 2>&1) =~ "Unable to locate a Java Runtime" ]]
+then
+    echo "Start installing OpenJDK:"
+    brew install openjdk
+    grep -q  'openjdk/bin' ~/.profile  || echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.profile
+    grep -q  'openjdk/bin' ~/.zprofile || echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zprofile
+    grep -q  'JAVA_HOME' ~/.profile  || echo "export JAVA_HOME=/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home" >> ~/.profile
+    grep -q  'JAVA_HOME' ~/.zprofile || echo "export JAVA_HOME=/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home" >> ~/.zprofile
+    source ~/.profile
+    java -version
+    echo "JAVA_HOME is:"
+    echo "$JAVA_HOME"
+    echo "$ROW_TILDA"
+else
+    echo "Java is already installed:"
+    java -version
+    source ~/.profile
+    echo "JAVA_HOME is:"
+    echo "$JAVA_HOME"
+    echo "$ROW_TILDA"
+fi
+
 # Install Postman
 if [[ -x /Applications/Postman.app ]]
 then
