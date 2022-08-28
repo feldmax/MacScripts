@@ -96,7 +96,7 @@ After that, run this script again.
 fi
 
 # Create the list of packages to be installed
-packages=("package_java" "package_js" "package_python")
+packages=("package_java" "package_python" "package_js" "package_upgrade")
 install_packs=("package_init")  #always install/update initial package
 
 for str in "${packages[@]}"; do
@@ -109,7 +109,6 @@ for str in "${packages[@]}"; do
       install_packs+=("$str")
   fi
 done
-#echo -e  "\nThe following packages will be installed:\n$BOLD ${install_packs[*]} $RESET \n"
 
 echo -e  "\nThe following packages will be installed:\n"
 printf '%s\n' "${install_packs[@]}"; echo

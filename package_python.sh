@@ -14,7 +14,7 @@ echo -e "\n****************************** PACKAGE_PYTHON ***********************
 time1=$(date +%s)  # start time
 
 # Install Python and adding Python aliases if they don't exist
-echo -e "Start installing or updating Python to the latest version:\n"
+echo -e "Try to install or upgrade Python:\n"
 brew install python
 grep -q  'alias python=' ~/.profile  || echo alias python='/opt/homebrew/bin/python3' >> ~/.profile
 grep -q  'alias python=' ~/.zprofile || echo alias python='/opt/homebrew/bin/python3' >> ~/.zprofile

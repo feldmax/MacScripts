@@ -27,7 +27,6 @@ else
     echo "Start installing XCode:"
     echo "Please confirm XCode installation and accept license agreement in the popup window"
     xcode-select --install
-    echo "$ROW_TILDA"
     xcode-select -v
     echo "$ROW_TILDA"
 fi
@@ -41,31 +40,34 @@ then
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.profile
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
-    echo "$ROW_TILDA"
     brew --version
     echo "$ROW_TILDA"
 else
     echo "Homebrew is already installed. Checking for an update..."
-#    brew --version
-    brew update
-    brew upgrade
     brew --version
     echo "$ROW_TILDA"
 fi
 
-# Install or upgrade Git (instead of default v. 2.32.1 (Apple Git-133))
-echo "Checking for Git updates..."
-brew install git
-git --version
-which git
-echo "$ROW_TILDA"
+# Install Git (on MacOS Monterey the git is already installed: v. 2.32.1 (Apple Git-133))
+if ! command -v git &> /dev/null
+then
+    echo "Start installing Git:"
+    brew install git
+    git --version
+    which git
+    echo "$ROW_TILDA"
+else
+    echo "Git is already installed:"
+    git --version
+    which git
+    echo "$ROW_TILDA"
+fi
 
-# Upgrade PIP and all python packages (added with XCode library > Python3 framework)
-echo "Checking for Python packages updates..."
-pip3 install --upgrade $(pip3 list --outdated | awk 'NR>2 { print $1 }')
+# Upgrade pip and setuptools (added with XCode library > Python3 framework)
+echo "Upgrade pip and setuptools:"
+pip3 install --upgrade pip setuptools
 pip3 --version
 which pip3
-pip3 list
 echo "$ROW_TILDA"
 
 # Record time
