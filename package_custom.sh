@@ -3,15 +3,26 @@
 # NOTE:
 # This script should be triggered by another wrapper script.
 # To run it locally, use the next commands:
-# sudo chmod +x package_template.sh
-# ./package_template.sh | tee package_template.log
+# sudo chmod +x package_custom.sh
+# ./package_custom.sh | tee package_custom.log
 #
 # trap 'echo "# $BASH_COMMAND";read' DEBUG    # enable debug mode upon demand
 
-echo -e "\n****************************** PACKAGE_TEMPLATE ******************************\n"
+echo -e "\n****************************** PACKAGE_CUSTOM ******************************\n"
 
 # Record time
 time1=$(date +%s)  # start time
+
+echo -e "
+This is a template file for creating a custom package.
+You can create a fully customized package with all the software and configurations you need.
+The installer will process this package directly from your computer, so you don't need to
+upload it to GitHub or anywhere else. You can also use this package to overwrite any program
+installed with shared packages or change the default configuration if you need to.
+Follow the instructions on this web page: <TBD>
+and just change the commented code examples below.
+
+"
 
 # Find homebrew formulas in: https://formulae.brew.sh/
 # Find Python packages in: https://pypi.org/

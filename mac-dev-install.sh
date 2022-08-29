@@ -38,13 +38,15 @@ Common tools:
 - package_ide       (IntelliJ, VS Code, Eclipse, Atom, Brackets)
 - package_browsers  (Chrome, Canary, Chromium, Edge, Firefox, Opera)
 - package_messengers        (WhatsApp, Telegram, Viber, Zoom)
-- package_miscellaneous     (Adobe Acrobat, Macs Fan Control, Unarchiver, VLC)
 - package_qa                (Open JDK, Postman, JMerer, Selenium)
 Team specific tools:
 - package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)
 - package_neo       (Open JDK 8, NodeJS 14)
-Personal tools:
-- package_personal  (Google Drive, uTorrent, mkdocs-material, aliases, tree, telnet, wget )
+Custom tools:
+- package_custom    (This is just template for custom package creation)
+- package_custom_example    (Adobe Acrobat, Macs Fan Control, Unarchiver,
+                            Google Drive, uTorrent, VLC,  mkdocs-material,
+                            tree, telnet, wget, aliases )
 Upgrade:
 - package_upgrade (upgrade all installed packages to the latest versions)
 
@@ -99,7 +101,7 @@ fi
 
 # Create the list of packages to be installed
 packages=("package_java" "package_js" "package_python" "package_ide" "package_browsers" "package_messengers" \
-"package_miscellaneous" "package_qa" "package_devops" "package_neo" "package_upgrade")
+"package_qa" "package_devops" "package_neo" "package_custom" "package_upgrade")
 
 install_packs=("package_init")  #always install/update initial package
 

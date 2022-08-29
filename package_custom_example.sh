@@ -3,12 +3,12 @@
 # NOTE:
 # This script should be triggered by another wrapper script.
 # To run it locally, use the next commands:
-# sudo chmod +x package_miscellaneous.sh
-# ./package_miscellaneous.sh | tee package_miscellaneous.log
+# sudo chmod +x package_custom_example.sh
+# ./package_custom_example.sh | tee package_custom_example.log
 #
 # trap 'echo "# $BASH_COMMAND";read' DEBUG    # enable debug mode upon demand
 
-echo -e "\n****************************** PACKAGE_MISCELLANEOUS ******************************\n"
+echo -e "\n****************************** PACKAGE_CUSTOM_EXAMPLE ******************************\n"
 
 # Record time
 time1=$(date +%s)  # start time
