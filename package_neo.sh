@@ -26,12 +26,13 @@ then
 #    brew install --cask adoptopenjdk8
     brew install --cask homebrew/cask-versions/adoptopenjdk8
     echo "$ROW_TILDA"
-    java -version
     echo "export JAVA_HOME=$(/usr/libexec/java_home)" >> ~/.profile
     echo "export JAVA_HOME=$(/usr/libexec/java_home)" >> ~/.zprofile
     source ~/.profile
     echo "JAVA_HOME is:"
     echo "$JAVA_HOME"
+    echo "Java 8 version:"
+    $JAVA_HOME\bin\java -version
     echo "$ROW_TILDA"
 else
     echo "Java is already installed:"
@@ -39,6 +40,8 @@ else
     source ~/.profile
     echo "JAVA_HOME is:"
     echo "$JAVA_HOME"
+    echo "Java 8 version:"
+    $JAVA_HOME\bin\java -version
     echo "$ROW_TILDA"
 fi
 
