@@ -26,7 +26,7 @@ echo "Checking for Homebrew updates..."
 brew update
 brew upgrade
 brew --version
-echo "Brew packages:"
+echo -e "\nBrew packages:\n"
 brew list --versions
 echo "$ROW_TILDA"
 
