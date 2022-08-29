@@ -44,9 +44,9 @@ Team specific tools:
 - package_neo       (Open JDK 8, NodeJS 14)
 Custom tools:
 - package_custom    (This is just template for custom package creation)
-- package_custom_example    (Adobe Acrobat, Macs Fan Control, Unarchiver,
-                            Google Drive, uTorrent, VLC,  mkdocs-material,
-                            tree, telnet, wget, aliases )
+- package_custom_example    (Adobe Acrobat, Google Drive, Macs Fan Control,
+                            Unarchiver, VLC, telnet, tree, wget,
+                            mkdocs-material, set aliases )
 Upgrade:
 - package_upgrade (upgrade all installed packages to the latest versions)
 
@@ -101,7 +101,7 @@ fi
 
 # Create the list of packages to be installed
 packages=("package_java" "package_js" "package_python" "package_ide" "package_browsers" "package_messengers" \
-"package_qa" "package_devops" "package_neo" "package_custom" "package_upgrade")
+"package_qa" "package_devops" "package_neo" "package_custom_example" "package_upgrade")
 
 install_packs=("package_init")  #always install/update initial package
 
