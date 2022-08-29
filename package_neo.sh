@@ -19,7 +19,7 @@ time1=$(date +%s)  # start time
 
 # Install Java 8 (Open JDK 8)
 # Note: The installer asks for Password and acceptance of Java access to the Documents folder, at the end
-if [[ $(java -version 2>&1) =~ "Unable to locate a Java Runtime" ]]
+if ! [[ $(java -version 2>&1) =~ "build 1.8.0_" ]]
 then
     echo "Start installing OpenJDK 8:"
     brew tap adoptopenjdk/openjdk
@@ -32,9 +32,6 @@ then
     echo "JAVA_HOME is:"
     echo "$JAVA_HOME"
     echo "$ROW_TILDA"
-elif ! [[ $(java -version 2>&1) =~ "build 1.8.0_" ]]
-then
-    echo "Need to install OpenJDK 8"
 else
     echo "Java is already installed:"
     java -version
