@@ -29,6 +29,7 @@ else
 fi
 
 # Install Google Drive
+# Note: Installer asks for sudo password...
 if [[ -x /Applications/Google\ Drive.app ]]
 then
     echo "Google Drive is already installed:"
@@ -151,6 +152,7 @@ fi
 
 # Set aliases and default shell
 chsh -s /bin/bash	# change default shell to bash for current account
+                  # Note: The command asks for a sudo password...
 
 grep -q  'll=' ~/.profile  || echo alias ll='ls -laG' >> ~/.profile
 grep -q  'll=' ~/.zprofile || echo alias ll='ls -laG' >>  ~/.zprofile
