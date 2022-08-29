@@ -14,16 +14,15 @@ echo -e "\n****************************** PACKAGE_CUSTOM ***********************
 time1=$(date +%s)  # start time
 
 echo -e "
-$YELLOW $BOLD
-\n👉 This is a template file for creating a custom package.
+👉 This is a template file for creating a custom package.
 You can create a fully customized package with all the software and configurations
 you need. The installer will process this package directly from your computer, so
 you don't need to upload it to GitHub or anywhere else. You can also use this package
 to overwrite any program installed with shared packages or change the default
 configuration if you need to.
 Follow the instructions on this web page: <TBD>
-and just change the commented code examples below. 👈 \n
-$RESET
+and just change the commented code examples below. 👈
+
 "
 
 # Find homebrew formulas in: https://formulae.brew.sh/
