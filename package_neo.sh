@@ -13,10 +13,6 @@ echo -e "\n****************************** PACKAGE_NEO **************************
 # Record time
 time1=$(date +%s)  # start time
 
-# install JDK 8 if this specific version is not installed
-# overwrite JAVA_HOME with jdk8 path (add new line)
-
-
 # Install Java 8 (Open JDK 8)
 # Note: The installer asks for Password and acceptance of Java access to the Documents folder, at the end
 if ! [[ $(java -version 2>&1) =~ "build 1.8.0_" ]] && [[ $($JAVA_HOME/bin/java -version 2>&1) =~ "build 1.8.0_" ]]
@@ -55,11 +51,6 @@ else
     echo "$ROW_TILDA"
 fi
 
-
-# install NodeJS 14 if this specific version is not installed
-# add PATH with node@14 path if not exist
-# add flags if not exist
-
 # Install NodeJS 14
 if ! [[ $(node --version) =~ "v14." ]] || ! command -v node &> /dev/null
 then
@@ -81,8 +72,6 @@ else
     which node
     echo "$ROW_TILDA"
 fi
-
-
 
 # Record time
 time2=$(date +%s)  # end time
