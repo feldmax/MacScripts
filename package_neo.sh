@@ -23,7 +23,8 @@ if ! [[ $(java -version 2>&1) =~ "build 1.8.0_" ]]
 then
     echo "Start installing OpenJDK 8:"
     brew tap adoptopenjdk/openjdk
-    brew install --cask adoptopenjdk8
+#    brew install --cask adoptopenjdk8
+    brew install --cask homebrew/cask-versions/adoptopenjdk8
     echo "$ROW_TILDA"
     java -version
     echo "export JAVA_HOME=$(/usr/libexec/java_home)" >> ~/.profile
