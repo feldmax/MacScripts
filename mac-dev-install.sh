@@ -41,7 +41,7 @@ Common tools:
 - package_miscellaneous     (Adobe Acrobat, Macs Fan Control, Unarchiver, VLC)
 - package_qa                (Open JDK, Postman, JMerer, Selenium)
 Team specific tools:
-- package_devops    (groovy, vault, docker, kubectl, cf-cli, gh)
+- package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)
 - package_neo       (Open JDK 8, NodeJS 14)
 Personal tools:
 - package_personal  (Google Drive, uTorrent, mkdocs-material, aliases, tree, telnet, wget )
