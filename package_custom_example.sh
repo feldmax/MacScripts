@@ -151,9 +151,6 @@ fi
 # ========================= PERSONAL SETTINGS =========================
 
 # Set aliases and default shell
-chsh -s /bin/bash	# change default shell to bash for current account
-                  # Note: The command asks for a sudo password...
-
 grep -q  'll=' ~/.profile  || echo alias ll='ls -laG' >> ~/.profile
 grep -q  'll=' ~/.zprofile || echo alias ll='ls -laG' >>  ~/.zprofile
 grep -q  'alias python=' ~/.profile  || echo alias python='/opt/homebrew/bin/python3' >> ~/.profile
@@ -162,6 +159,9 @@ grep -q  'alias pip=' ~/.profile  || echo alias pip='/opt/homebrew/bin/pip3' >> 
 grep -q  'alias pip=' ~/.zprofile || echo alias pip='/opt/homebrew/bin/pip3' >> ~/.zprofile
 grep -q  'jplab=' ~/.profile  || echo alias jplab='/opt/homebrew/bin/jupyter-lab' >> ~/.profile
 grep -q  'jplab=' ~/.zprofile || echo alias jplab='/opt/homebrew/bin/jupyter-lab' >>  ~/.zprofile
+
+[[ $(echo $SHELL) =~ "/bin/bash" ]] || chsh -s /bin/bash	# change default shell to bash for current account
+                                                          # Note: The command asks for a sudo password...
 
 # Record time
 time2=$(date +%s)  # end time
