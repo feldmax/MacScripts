@@ -21,7 +21,7 @@ time1=$(date +%s)  # start time
 # Note: The installer asks for Password and acceptance of Java access to the Documents folder, at the end
 if ! [[ $(java -version 2>&1) =~ "build 1.8.0_" ]]
 then
-    echo "Start installing OpenJDK 8:"
+    echo "Start installing | updating OpenJDK 8:"
     brew tap adoptopenjdk/openjdk
 #    brew install --cask adoptopenjdk8
     brew install --cask homebrew/cask-versions/adoptopenjdk8
@@ -32,7 +32,7 @@ then
     echo "JAVA_HOME is:"
     echo "$JAVA_HOME"
     echo "Java 8 version:"
-    $JAVA_HOME\bin\java -version
+    $JAVA_HOME/bin/java -version
     echo "$ROW_TILDA"
 else
     echo "Java is already installed:"
@@ -41,7 +41,7 @@ else
     echo "JAVA_HOME is:"
     echo "$JAVA_HOME"
     echo "Java 8 version:"
-    $JAVA_HOME\bin\java -version
+    $JAVA_HOME/bin/java -version
     echo "$ROW_TILDA"
 fi
 
