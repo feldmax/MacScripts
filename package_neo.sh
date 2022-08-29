@@ -19,7 +19,7 @@ time1=$(date +%s)  # start time
 
 # Install Java 8 (Open JDK 8)
 # Note: The installer asks for Password and acceptance of Java access to the Documents folder, at the end
-if ! [[ $(java -version 2>&1) =~ "build 1.8.0_" ]]
+if ! [[ $(java -version 2>&1) =~ "build 1.8.0_" ]] && [[ $($JAVA_HOME/bin/java -version 2>&1) =~ "build 1.8.0_" ]]
 then
     echo "Start installing | updating OpenJDK 8:"
     brew tap adoptopenjdk/openjdk
@@ -33,17 +33,28 @@ then
     echo "$JAVA_HOME"
     echo "Java 8 version:"
     $JAVA_HOME/bin/java -version
+    echo "Java 8 location is:"
+    echo "$JAVA_HOME/bin/java"
+    echo "Default Java on this machine:"
+    java -version
+    echo "Default Java location is:"
+    command -v java
     echo "$ROW_TILDA"
 else
-    echo "Java is already installed:"
-    java -version
     source ~/.profile
     echo "JAVA_HOME is:"
     echo "$JAVA_HOME"
     echo "Java 8 version:"
     $JAVA_HOME/bin/java -version
+    echo "Java 8 location is:"
+    echo "$JAVA_HOME/bin/java"
+    echo "Default Java on this machine:"
+    java -version
+    echo "Default Java location is:"
+    command -v java
     echo "$ROW_TILDA"
 fi
+
 
 # install NodeJS 14 if this specific version is not installed
 # add PATH with node@14 path if not exist
