@@ -76,7 +76,7 @@ then
     which node
     echo "$ROW_TILDA"
 else
-    echo "NodeJS is already installed:"
+    echo "NodeJS 14 is already installed:"
     node --version
     which node
     echo "$ROW_TILDA"
