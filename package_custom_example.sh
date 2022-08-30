@@ -160,8 +160,8 @@ grep -q  'alias pip=' ~/.zprofile || echo alias pip='/opt/homebrew/bin/pip3' >> 
 grep -q  'jplab=' ~/.profile  || echo alias jplab='/opt/homebrew/bin/jupyter-lab' >> ~/.profile
 grep -q  'jplab=' ~/.zprofile || echo alias jplab='/opt/homebrew/bin/jupyter-lab' >>  ~/.zprofile
 
-[[ $(echo $SHELL) =~ "/bin/bash" ]] || chsh -s /bin/bash	# change default shell to bash for current account
-                                                          # Note: The command asks for a sudo password...
+#[[ $(echo $SHELL) =~ "/bin/bash" ]] || chsh -s /bin/bash	# change default shell to bash for current account
+#                                                          # Note: The command asks for a sudo password...
 
 # Record time
 time2=$(date +%s)  # end time

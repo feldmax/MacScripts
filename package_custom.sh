@@ -29,6 +29,18 @@ and just change the commented code examples below. 👈
 # Find Python packages in: https://pypi.org/
 # In the examples below, change XXXXX to the actual app name.
 #
+## Install GUI application example
+#if [[ -x /Applications/XXXXX.app ]]
+#then
+#    echo "XXXXX is already installed:"
+#    echo "/Applications/XXXXX.app"
+#    echo "$ROW_TILDA"
+#else
+#    echo "Start installing XXXXX:"
+#    brew install --cask XXXXX
+#    echo "$ROW_TILDA"
+#fi
+#
 ## Install CLI application example
 #if ! command -v XXXXX &> /dev/null
 #then
@@ -42,22 +54,18 @@ and just change the commented code examples below. 👈
 #    echo "$ROW_TILDA"
 #fi
 #
-## Install GUI application example
-#if [[ -x /Applications/XXXXX.app ]]
+## Install Python application example
+#if ! [[ $(pip3 list) =~ "XXXXX" ]]
 #then
-#    echo "XXXXX is already installed:"
-#    echo "/Applications/XXXXX.app"
+#    echo "Start installing XXXXX:"
+#    pip3 install XXXXX
+#    XXXXX --version
 #    echo "$ROW_TILDA"
 #else
-#    echo "Start installing XXXXX:"
-#    brew install --cask XXXXX
+#    echo "XXXXX is already installed:"
+#    XXXXX --version
 #    echo "$ROW_TILDA"
 #fi
-#
-## Install Python application example
-#echo "Start installing XXXXX:"
-#pip3 install XXXXX
-#echo "$ROW_TILDA"
 #
 ## Uninstall Homebrew app example (if the app is no longer needed)
 #echo "Removing XXXXX:"
@@ -68,6 +76,10 @@ and just change the commented code examples below. 👈
 #echo "Removing XXXXX:"
 #pip3 uninstall XXXXX
 #echo "$ROW_TILDA"
+#
+## Set alias example
+#grep -q  'll=' ~/.profile  || echo alias ll='ls -laG' >> ~/.profile
+#grep -q  'll=' ~/.zprofile || echo alias ll='ls -laG' >>  ~/.zprofile
 #
 
 # Record time
