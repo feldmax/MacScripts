@@ -43,7 +43,7 @@ $BOLD  Common packages: $RESET
 $BOLD  Team specific packages: $RESET
 - package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)      ~2 min
 - package_neo       (Open JDK 8, Maven, NodeJS 14, Eclipse, IntelliJ,
-                     VSCode, Postman)                                 ~10 min
+                     VSCode, Postman)                                ~10 min
 
 $BOLD  Custom package: $RESET
 - package_custom    (This is just template for custom package creation)
