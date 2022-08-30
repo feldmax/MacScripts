@@ -31,24 +31,24 @@ According to your development needs, you can choose which software packages
 will be installed.
 
 $BOLD  Common packages: $RESET
-- package_init      (Apple XCode, Homebrew, Git and Python PIP)
-- package_java      (Open JDK, Maven, Tomcat, IntelliJ IDEA CE)
-- package_js        (NodeJS, IntelliJ IDEA CE)
-- package_python    (Python, PyCharm CE, Jupyter Lab)
-- package_ide       (IntelliJ, VSCode, Eclipse, Atom, Brackets)
-- package_browsers  (Chrome, Canary, Chromium, Edge, Firefox, Opera)
-- package_messengers        (WhatsApp, Telegram, Viber, Zoom)
-- package_qa                (Open JDK, Postman, JMerer, Selenium)
+- package_init      (Apple XCode, Homebrew, Git and Python PIP)       ~8 min
+- package_java      (Open JDK, Maven, Tomcat, IntelliJ IDEA CE)       ~3 min
+- package_js        (NodeJS, IntelliJ IDEA CE)                        ~4 min
+- package_python    (Python, Jupyter Lab, PyCharm CE)                 ~8 min
+- package_ide       (IntelliJ, VSCode, Eclipse, Atom, Brackets)       ~8 min
+- package_browsers  (Chrome, Canary, Chromium, Edge, Firefox, Opera)  ~6 min
+- package_messengers        (WhatsApp, Telegram, Viber, Zoom)         ~2 min
+- package_qa                (Open JDK, Postman, JMerer, Selenium)     ~2 min
 
 $BOLD  Team specific packages: $RESET
-- package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)
-- package_neo       (Open JDK 8, Maven, NodeJS 14, Eclipse, IntelliJ, VSCode, Postman)
+- package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)      ~2 min
+- package_neo       (Open JDK 8, Maven, NodeJS 14, Eclipse, IntelliJ, VSCode, Postman)  ~10 min
 
 $BOLD  Custom package: $RESET
 - package_custom    (This is just template for custom package creation)
 
 $BOLD  Upgrade package: $RESET
-- package_upgrade (upgrade all installed packages to the latest versions)
+- package_upgrade   (upgrade all installed packages to the latest versions) ~1 min
 
 The expected execution time may vary depending on the number of packages you
 want to install. In most cases, it will take about 10-30 minutes,
