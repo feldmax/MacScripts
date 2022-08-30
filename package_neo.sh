@@ -51,6 +51,27 @@ else
     echo "$ROW_TILDA"
 fi
 
+# Install Maven
+if ! command -v mvn &> /dev/null
+then
+    echo "Start installing Maven:"
+    brew install maven
+    grep -q  'M2_HOME' ~/.profile  || echo "export M2_HOME=/opt/homebrew/opt/maven/libexec" >> ~/.profile
+    grep -q  'M2_HOME' ~/.zprofile || echo "export M2_HOME=/opt/homebrew/opt/maven/libexec" >> ~/.zprofile
+    source ~/.profile
+    mvn --version
+    echo "M2_HOME is:"
+    echo "$M2_HOME"
+    echo "$ROW_TILDA"
+else
+    echo "Maven is already installed:"
+    mvn --version
+    source ~/.profile
+    echo "M2_HOME is:"
+    echo "$M2_HOME"
+    echo "$ROW_TILDA"
+fi
+
 # Install NodeJS 14
 if ! [[ $(node --version) =~ "v14." ]] || ! command -v node &> /dev/null
 then
@@ -70,6 +91,54 @@ else
     echo "NodeJS 14 is already installed:"
     node --version
     which node
+    echo "$ROW_TILDA"
+fi
+
+# Install Eclipse
+if [[ -x /Applications/Eclipse\ JEE.app ]]
+then
+    echo "Eclipse is already installed:"
+    echo "/Applications/Eclipse JEE.app"
+    echo "$ROW_TILDA"
+else
+    echo "Start installing Eclipse:"
+    brew install --cask eclipse-jee
+    echo "$ROW_TILDA"
+fi
+
+# Install IntelliJ IDEA CE
+if [[ -x /Applications/IntelliJ\ IDEA\ CE.app ]]
+then
+    echo "IntelliJ IDEA CE is already installed:"
+    echo "/Applications/IntelliJ IDEA CE.app"
+    echo "$ROW_TILDA"
+else
+    echo "Start installing IntelliJ IDEA CE:"
+    brew install --cask intellij-idea-ce
+    echo "$ROW_TILDA"
+fi
+
+# Install Visual Studio Code
+if [[ -x /Applications/Visual\ Studio\ Code.app ]]
+then
+    echo "Visual Studio Code is already installed:"
+    echo "/Applications/Visual Studio Code.app"
+    echo "$ROW_TILDA"
+else
+    echo "Start installing VSCode:"
+    brew install --cask visual-studio-code
+    echo "$ROW_TILDA"
+fi
+
+# Install Postman
+if [[ -x /Applications/Postman.app ]]
+then
+    echo "Postman is already installed:"
+    echo "/Applications/Postman.app"
+    echo "$ROW_TILDA"
+else
+    echo "Start installing Postman:"
+    brew install --cask postman
     echo "$ROW_TILDA"
 fi
 

@@ -35,14 +35,14 @@ $BOLD  Common packages: $RESET
 - package_java      (Open JDK, Maven, Tomcat, IntelliJ IDEA CE)
 - package_js        (NodeJS, IntelliJ IDEA CE)
 - package_python    (Python, PyCharm CE, Jupyter Lab)
-- package_ide       (IntelliJ, VS Code, Eclipse, Atom, Brackets)
+- package_ide       (IntelliJ, VSCode, Eclipse, Atom, Brackets)
 - package_browsers  (Chrome, Canary, Chromium, Edge, Firefox, Opera)
 - package_messengers        (WhatsApp, Telegram, Viber, Zoom)
 - package_qa                (Open JDK, Postman, JMerer, Selenium)
 
 $BOLD  Team specific packages: $RESET
 - package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)
-- package_neo       (Open JDK 8, NodeJS 14)
+- package_neo       (Open JDK 8, Maven, NodeJS 14, Eclipse, IntelliJ, VSCode, Postman)
 
 $BOLD  Custom package: $RESET
 - package_custom    (This is just template for custom package creation)
