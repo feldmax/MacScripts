@@ -53,18 +53,18 @@ then
     echo -e "SSH key pair is already exists in ~/.ssh . Your SSH public key (id_rsa.pub) is:\n"
     cat ~/.ssh/id_rsa.pub
     echo -e "\n☝️  Copy this SSH public key to your GitHub and Gerrit accounts:
-         GitHub > User Icon >  Settings > SSH and GPG keys
-         Gerrit > ⚙️  Settings > SSH Keys
-         "
+GitHub > User Icon >  Settings > SSH and GPG keys
+Gerrit > ⚙️  Settings > SSH Keys
+"
     echo
 else
     ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y    # use the <<<y option to overwrite the previous key
     echo -e "Your default SSH key pair is created in ~/.ssh . Your SSH public key (id_rsa.pub) is:\n"
     cat ~/.ssh/id_rsa.pub
     echo -e "\n☝️  Copy this SSH public key to your GitHub and Gerrit accounts:
-         GitHub > User Icon >  Settings > SSH and GPG keys
-         Gerrit > ⚙️  Settings > SSH Keys
-         "
+GitHub > User Icon >  Settings > SSH and GPG keys
+Gerrit > ⚙️  Settings > SSH Keys
+"
     echo
 fi
 
