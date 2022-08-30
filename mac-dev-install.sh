@@ -42,13 +42,14 @@ $BOLD  Common packages: $RESET
 
 $BOLD  Team specific packages: $RESET
 - package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)      ~2 min
-- package_neo       (Open JDK 8, Maven, NodeJS 14, Eclipse, IntelliJ, VSCode, Postman)  ~10 min
+- package_neo       (Open JDK 8, Maven, NodeJS 14, Eclipse, IntelliJ,
+                     VSCode, Postman)                                 ~10 min
 
 $BOLD  Custom package: $RESET
 - package_custom    (This is just template for custom package creation)
 
 $BOLD  Upgrade package: $RESET
-- package_upgrade   (upgrade all installed packages to the latest versions) ~1 min
+- package_upgrade   (upgrade all installed programs to the latest versions) ~1 min
 
 The expected execution time may vary depending on the number of packages you
 want to install. In most cases, it will take about 10-30 minutes,
