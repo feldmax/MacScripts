@@ -15,9 +15,8 @@ time1=$(date +%s)  # start time
 
 # Install Java 8 (Open JDK 8)
 # Note: The installer asks for Password and acceptance of Java access to the Documents folder, at the end
-#if ! [[ $(java -version 2>&1) =~ "build 1.8.0_" ]] && ! [[ $($JAVA_HOME/bin/java -version 2>&1) =~ "build 1.8.0_" ]]
-
 if ! [[ $($JAVA_HOME/bin/java -version 2>&1) =~ "build 1.8.0_" ]]
+# if ! [[ $(java -version 2>&1) =~ "build 1.8.0_" ]] && ! [[ $($JAVA_HOME/bin/java -version 2>&1) =~ "build 1.8.0_" ]]
 then
     echo "Start installing | updating OpenJDK 8:"
     brew tap adoptopenjdk/openjdk
@@ -75,7 +74,8 @@ else
 fi
 
 # Install NodeJS 14
-if ! [[ $(node --version) =~ "v14." ]] || ! command -v node &> /dev/null
+if ! [[ $(node --version) =~ "v14." ]]
+# if ! [[ $(node --version) =~ "v14." ]] || ! command -v node &> /dev/null
 then
     echo "Start installing NodeJS 14:"
     brew install node@14
