@@ -30,7 +30,7 @@ echo -e "
 According to your development needs, you can choose which software packages
 will be installed.
 
-Common tools:
+Common packages:
 - package_init      (Apple XCode, Homebrew, Git and Python PIP)
 - package_java      (Open JDK, Maven, Tomcat, IntelliJ IDEA CE)
 - package_js        (NodeJS, IntelliJ IDEA CE)
@@ -39,15 +39,17 @@ Common tools:
 - package_browsers  (Chrome, Canary, Chromium, Edge, Firefox, Opera)
 - package_messengers        (WhatsApp, Telegram, Viber, Zoom)
 - package_qa                (Open JDK, Postman, JMerer, Selenium)
-Team specific tools:
+
+Team specific packages:
 - package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)
 - package_neo       (Open JDK 8, NodeJS 14)
-Custom tools:
+
+Custom package:
 - package_custom    (This is just template for custom package creation)
 - package_custom_example    (Adobe Acrobat, Google Drive, Macs Fan Control,
                             Unarchiver, VLC, telnet, tree, wget,
                             mkdocs-material, set aliases )
-Upgrade:
+Upgrade package:
 - package_upgrade (upgrade all installed packages to the latest versions)
 
 The expected execution time may vary depending on the number of packages you

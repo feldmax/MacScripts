@@ -10,6 +10,11 @@
 
 echo -e "\n****************************** PACKAGE_CUSTOM_EXAMPLE ******************************\n"
 
+echo -e "This is an example of a custom package that adds the following programs:
+Adobe Acrobat, Google Drive, Macs Fan Control, Unarchiver, VLC, telnet, tree, wget,
+Open Stack CLI, mkdocs-material, and sets aliases for the current user.
+"
+
 # Record time
 time1=$(date +%s)  # start time
 
