@@ -30,7 +30,7 @@ echo -e "
 According to your development needs, you can choose which software packages
 will be installed.
 
-Common packages:
+$BOLD   Common packages: $RESET
 - package_init      (Apple XCode, Homebrew, Git and Python PIP)
 - package_java      (Open JDK, Maven, Tomcat, IntelliJ IDEA CE)
 - package_js        (NodeJS, IntelliJ IDEA CE)
@@ -40,14 +40,14 @@ Common packages:
 - package_messengers        (WhatsApp, Telegram, Viber, Zoom)
 - package_qa                (Open JDK, Postman, JMerer, Selenium)
 
-Team specific packages:
+$BOLD   Team specific packages: $RESET
 - package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)
 - package_neo       (Open JDK 8, NodeJS 14)
 
-Custom package:
+$BOLD   Custom package: $RESET
 - package_custom    (This is just template for custom package creation)
 
-Upgrade package:
+$BOLD   Upgrade package: $RESET
 - package_upgrade (upgrade all installed packages to the latest versions)
 
 The expected execution time may vary depending on the number of packages you
