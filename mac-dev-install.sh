@@ -46,14 +46,12 @@ Team specific packages:
 
 Custom package:
 - package_custom    (This is just template for custom package creation)
-- package_custom_example    (Adobe Acrobat, Google Drive, Macs Fan Control,
-                            Unarchiver, VLC, telnet, tree, wget,
-                            mkdocs-material, set aliases )
+
 Upgrade package:
 - package_upgrade (upgrade all installed packages to the latest versions)
 
 The expected execution time may vary depending on the number of packages you
-want to install. In most cases it will be about 10-15 minutes per package,
+want to install. In most cases, it will take about 10-30 minutes,
 if Apple XCode is already installed.
 During the installation process, you will be asked to enter your iUser account
 and will be prompted several times to enter your password and accept licenses,
