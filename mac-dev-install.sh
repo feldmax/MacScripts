@@ -31,7 +31,7 @@ According to your development needs, you can choose which software packages
 will be installed.
 
 $BOLD  Common packages: $RESET
-- package_init      (Apple XCode, Homebrew, Git and Python PIP)       ~8 min
+- package_init      (Apple XCode, Homebrew, Git and Python PIP)      ~10 min
 - package_java      (Open JDK, Maven, Tomcat, IntelliJ IDEA CE)       ~3 min
 - package_js        (NodeJS, IntelliJ IDEA CE)                        ~4 min
 - package_python    (Python, Jupyter Lab, PyCharm CE)                 ~8 min
@@ -52,7 +52,7 @@ $BOLD  Upgrade package: $RESET
 - package_upgrade   (upgrade all installed programs to the latest versions) ~1 min
 
 The expected execution time may vary depending on the number of packages you
-want to install. In most cases, it will take about 10-30 minutes,
+want to install. In most cases, it will take about 10-20 minutes,
 if Apple XCode is already installed.
 During the installation process, you will be asked to enter your iUser account
 and will be prompted several times to enter your password and accept licenses,
