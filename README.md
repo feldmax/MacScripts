@@ -78,7 +78,7 @@ you can edit and run a custom package.
 - Edit this file and add the necessary programs to the if-else blocks.
 - See *package_custom_example.sh* for examples
 - In the terminal, change directory to the location of the file and run the installer
-- The installer will run the code from your local package_custom.sh file
+- The installer will run the code from your local *package_custom.sh* file
 
 ☝️ You can use the same procedure to customize any other package. The installer always tries to execute 
 the local files first, and if the file is not found, it will run the code from GitHub.
