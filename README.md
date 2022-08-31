@@ -40,7 +40,7 @@ if the SSH key pair already exists it will not be overwritten and the public key
 
 To run the script, just copy and paste this command into the terminal on your Mac:
 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/feldmax/MacScripts/main/mac-git-init.sh)" | tee mac-dev-git-init.log
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/feldmax/MacScripts/main/mac-git-init.sh)" | tee mac-git-init.log
 
 
 ## Package list

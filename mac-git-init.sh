@@ -2,11 +2,11 @@
 #
 # NOTE:
 # To start this script, copy and run the following command in a terminal:
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/feldmax/MacScripts/main/mac-dev-git-init.sh)" | tee mac-dev-git-init.log
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/feldmax/MacScripts/main/mac-git-init.sh)" | tee mac-git-init.log
 #
 # To run this script locally, use the next commands:
 # sudo chmod +x mac-git-init.sh
-# ./mac-git-init.sh | tee mac-dev-git-init.log
+# ./mac-git-init.sh | tee mac-git-init.log
 #
 # trap 'echo "# $BASH_COMMAND";read' DEBUG    # enable debug mode upon demand
 
