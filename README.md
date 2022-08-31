@@ -82,7 +82,6 @@ you can edit and run a custom package.
 ☝️ You can use the same procedure to customize any other package. The installer always tries to execute 
 the local files first, and if the file is not found, it will run the code from GitHub.
 
-
 ## *Known Issues*
 
 UX is not perfect yet. You will need to answer "Yes" or "No" to install each package.

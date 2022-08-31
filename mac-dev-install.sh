@@ -103,7 +103,7 @@ fi
 
 # Create the list of packages to be installed
 packages=("package_java" "package_js" "package_python" "package_ide" "package_browsers" "package_messengers" \
-"package_qa" "package_devops" "package_neo" "package_custom_example" "package_upgrade")
+"package_qa" "package_devops" "package_neo" "package_custom" "package_upgrade")
 
 install_packs=("package_init")  #always install/update initial package
 
