@@ -56,9 +56,8 @@ To run the script, just copy and paste this command into the terminal on your Ma
 - package_qa                (Open JDK, Postman, JMerer, Selenium)     ~2 min
 
 **Team specific packages:**
-- package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)      ~2 min
-- package_neo       (Open JDK 8, Maven, NodeJS 14, Eclipse, IntelliJ,
-  VSCode, Postman)                                ~10 min
+- package_devops    (gh, groovy, docker, kubectl, cf-cli, vault, Openstack Client)      ~2 min
+- package_neo       (Open JDK 8, Maven, NodeJS 14, Eclipse, IntelliJ, VSCode, Postman)  ~10 min
 
 **Custom package:**
 - package_custom            (This is just template for custom package creation)

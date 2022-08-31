@@ -125,21 +125,6 @@ fi
 
 # ========================= PYTHON APPS =========================
 
-# Install Openstack Client (Converged Cloud CLI basic modules)
-if ! [[ $(pip3 list) =~ "openstack" ]]
-then
-    echo "Start installing Openstack Client:"
-    pip3 install python-openstackclient
-    openstack --version
-    openstack module list
-    echo "$ROW_TILDA"
-else
-    echo "Openstack is already installed:"
-    openstack --version
-    openstack module list
-    echo "$ROW_TILDA"
-fi
-
 # Install mkdocs-material (tools to create static sites with Markdown)
 if ! [[ $(pip3 list) =~ "mkdocs" ]]
 then

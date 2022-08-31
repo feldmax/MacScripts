@@ -41,7 +41,8 @@ $BOLD  Common packages: $RESET
 - package_qa                (Open JDK, Postman, JMerer, Selenium)     ~2 min
 
 $BOLD  Team specific packages: $RESET
-- package_devops    (gh, groovy, docker, kubectl, cf-cli, vault)      ~2 min
+- package_devops    (gh, groovy, docker, kubectl, cf-cli, vault,
+                     Openstack Client)                               ~2 min
 - package_neo       (Open JDK 8, Maven, NodeJS 14, Eclipse, IntelliJ,
                      VSCode, Postman)                                ~10 min
 
