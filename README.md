@@ -1,6 +1,10 @@
 #  MacScripts
 A set of scripts for automatic installation and configuration of MacBook
 
+- [Package installer for Mac](https://github.com/feldmax/MacScripts#package-installer-for-mac)
+- [Package list](https://github.com/feldmax/MacScripts#package-list)
+- [How to create and run custom package](https://github.com/feldmax/MacScripts#how-to-create-and-run-custom-package)
+- [Known Issues](https://github.com/feldmax/MacScripts#known-issues)
 
 ## Package installer for Mac
 This folder contains the package installer for Mac and several packages with typical sets of software 
@@ -61,10 +65,10 @@ To run the script, just copy and paste this command into the terminal on your Ma
 - package_custom_example    (An example of my personal a custom package)
 
 **Upgrade package:**
-- package_upgrade   (upgrade all installed programs to the latest versions) &ensp;&ensp;&ensp;~2 min
-  &nbsp;&nbsp;&nbsp;&nbsp;~2 min
+- package_upgrade   (upgrade all installed programs to the latest versions)
 
-### *How to create and run custom package:*
+
+## How to create and run custom package
 
 If you need to add some additional software, create aliases, or want to build your own unique set of tools, 
 you can edit and run a custom package.
@@ -80,7 +84,7 @@ you can edit and run a custom package.
 the local files first, and if the file is not found, it will run the code from GitHub.
 
 
-###  Known Issues:
+## *Known Issues*
 
 UX is not perfect yet. You will need to answer "Yes" or "No" to install each package.
 Some programs ask for a sudo password and require you to accept a license during the installation process.
