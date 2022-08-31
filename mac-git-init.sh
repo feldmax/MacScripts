@@ -5,8 +5,8 @@
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/feldmax/MacScripts/main/mac-dev-git-init.sh)" | tee mac-dev-git-init.log
 #
 # To run this script locally, use the next commands:
-# sudo chmod +x mac-dev-git-init.sh
-# ./mac-dev-git-init.sh | tee mac-dev-git-init.log
+# sudo chmod +x mac-git-init.sh
+# ./mac-git-init.sh | tee mac-dev-git-init.log
 #
 # trap 'echo "# $BASH_COMMAND";read' DEBUG    # enable debug mode upon demand
 
