@@ -20,7 +20,7 @@ you need. The installer will process this package directly from your computer, s
 you don't need to upload it to GitHub or anywhere else. You can also use this
 package to overwrite any program installed with shared packages or change the
 default configuration if you need to.
-Follow the instructions on this web page: <TBD>
+Follow the instructions on this web page: <\e]8;;https://github.com/feldmax/MacScripts#how-to-create-and-run-custom-package\aHow to create and run custom package\e]8;;\a>
 and just change the commented code examples below. 👈
 
 "
