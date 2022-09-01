@@ -74,7 +74,8 @@ you can edit and run a custom package.
 
 - Open the *package_custom.sh* script file in GitHub and click Raw view
 - Right Click > Save As > and save it as a TXT file
-- Edit this file and add the necessary programs to the if-else blocks.
+- Edit this file and add the necessary programs to the if-else blocks
+- Find programs and their installation commands at: https://formulae.brew.sh
 - See *package_custom_example.sh* for examples
 - In the terminal, change directory to the location of the file and run the installer
 - The installer will run the code from your local *package_custom.sh* file
