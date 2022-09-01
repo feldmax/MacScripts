@@ -18,13 +18,6 @@ if ! command -v node &> /dev/null
 then
     echo "Start installing NodeJS:"
     brew install node
-#    echo 'export PATH="/opt/homebrew/opt/node/bin:$PATH"' >> ~/.profile
-#    echo 'export LDFLAGS="-L/opt/homebrew/opt/node/lib"' >> ~/.profile
-#    echo 'export CPPFLAGS="-I/opt/homebrew/opt/node/include"' >> ~/.profile
-#    echo 'export PATH="/opt/homebrew/opt/node/bin:$PATH"' >> ~/.zprofile
-#    echo 'export LDFLAGS="-L/opt/homebrew/opt/node/lib"' >> ~/.zprofile
-#    echo 'export CPPFLAGS="-I/opt/homebrew/opt/node/include"' >> ~/.zprofile
-#    source ~/.profile
     node --version
     which node
     echo "$ROW_TILDA"
@@ -54,3 +47,4 @@ time2=$(date +%s)  # end time
 secs=$(($time2 - $time1))
 printf 'Package installation time: %02dh:%02dm:%02ds\n' $((secs/3600)) $((secs%3600/60)) $((secs%60))
 echo
+

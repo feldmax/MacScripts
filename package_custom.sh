@@ -20,7 +20,8 @@ you need. The installer will process this package directly from your computer, s
 you don't need to upload it to GitHub or anywhere else. You can also use this
 package to overwrite any program installed with shared packages or change the
 default configuration if you need to.
-Follow the instructions here: https://github.com/feldmax/MacScripts#how-to-create-and-run-custom-package
+Follow the instructions here:
+https://github.com/feldmax/MacScripts#how-to-create-and-run-custom-package
 and simply edit the commented code examples from this template. 👈
 
 "
@@ -89,3 +90,4 @@ time2=$(date +%s)  # end time
 secs=$(($time2 - $time1))
 printf 'Package installation time: %02dh:%02dm:%02ds\n' $((secs/3600)) $((secs%3600/60)) $((secs%60))
 echo
+

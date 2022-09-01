@@ -154,3 +154,4 @@ echo -e "\n🔄  Now that the installation is complete, PLEASE DON'T FORGET TO R
 echo -e "\n                                 ¯\_(ツ)_/¯ \n"
 
 echo "$ROW_HASH"
+

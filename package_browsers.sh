@@ -93,3 +93,4 @@ time2=$(date +%s)  # end time
 secs=$(($time2 - $time1))
 printf 'Package installation time: %02dh:%02dm:%02ds\n' $((secs/3600)) $((secs%3600/60)) $((secs%60))
 echo
+
